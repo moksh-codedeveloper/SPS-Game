@@ -4,20 +4,50 @@
     padding: 0;
     box-sizing: border-box;
     font-family: "Nunito", sans-serif;
+    background-color: var(--main-color);
 }
 :root{
-    --main-color: #2C4E80;
-    --bg-color: #00215E;
-    --snd-color: #FFC55A;
-    --text-color: #FC4100;
+    --text-color: #2C4E80;
+    --snd-color: #00215E;
+    --bg-color: #FFC55A;
+    --main-color: #FC4100;
 }
-
-.choices{
+h1{
+    text-align: center;
+    color: var(--text-color);
+    font-size: 60px;
+    font-weight: 600;
+}
+.choice{
     height: 165px;
     width: 165px;
     border-radius: 50%;
     display: flex;
+    flex-direction: row;
     justify-content: center;
-    text-align: center;
-    
+    align-items: center;
 }
+
+img{
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices{
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.choice:hover{
+    background-color: var(--snd-color);
+    opacity: 1px var(--snd-color);
+    content: "";
+    box-shadow: 5px 4px 3px var(--text-color);
+    transform: translate(-3px);
+    transition: all 0.4s ease-out;
+}
+
