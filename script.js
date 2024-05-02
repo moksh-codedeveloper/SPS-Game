@@ -23,15 +23,15 @@ const showWinner = (userWin, choiceId, compChoice) => {
         compScore++;
         compScorePara.innerText = compScore;
         msg.innerText = `You lost. ${compChoice} beats your ${choiceId}`;
-        msg.style.backgroundColor = "red";
+        msg.style.backgroundColor = "#00215E";
+        msg.style.color = "#2C4E80";
     }
-}
+};
 
 const gameDraw = () => {
-    console.log("game was drawn!");
     msg.innerText = "game was drawn! pls try again.";
-    msg.style.backgroundColor = "#081b31";
-}
+    msg.style.backgroundColor = "#FFC55A";
+};
 
 const playGame = (choiceId) => {
     console.log("your choice is =",choiceId);
@@ -50,12 +50,12 @@ const playGame = (choiceId) => {
         }
         showWinner(userWin, choiceId, compChoice);
     }
-}
+};
 
 choices.forEach((choice) => {
     const choiceId = choice.getAttribute("id");
     choice.addEventListener("click", () => {
         console.log(choiceId);
         playGame(choiceId);
-    })
-})
+    });
+});
