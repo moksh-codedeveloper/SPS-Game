@@ -1,64 +1,23 @@
-* {
-    margin:0;
-    padding:0;
-    text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+}
+:root{
+    --main-color: #2C4E80;
+    --bg-color: #00215E;
+    --snd-color: #FFC55A;
+    --text-color: #FC4100;
 }
 
-h1 {
-    background-color: #081b31;
-    height: 5rem;
-    color: #fff;
-    line-height:5rem;
-}
-
-.choice {
+.choices{
     height: 165px;
-    width:  165px;
+    width: 165px;
     border-radius: 50%;
-    display:flex;
-    justify-content: center;
-    align-items: center;
-
-}
-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-}
-.choice:hover {
-    cursor: pointer;
-    background-color: #081b31;
-}
-.choices {
     display: flex;
     justify-content: center;
-    align-items: center;
-    margin-top : 5rem;
-    gap : 3rem;
-}
-
-.score-board {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size:2rem;
-    margin-top: 3rem;
-    gap: 5rem;
-}
-
-#user-score ,
-#comp-score {
-    font-size: 4rem;
-}
-.msg-container {
-    margin-top:5rem;
-}
-#msg {
-    font-size: 2rem;
-    display:inline;
-    color: #fff;
-    background-color: #081b31;
-    padding:1rem;
-    border-radius:1rem;
+    text-align: center;
+    
 }
