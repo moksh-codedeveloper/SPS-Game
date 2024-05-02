@@ -43,6 +43,7 @@ img{
 }
 
 .choice:hover{
+    cursor: pointer;
     background-color: var(--snd-color);
     opacity: 1px var(--snd-color);
     content: "";
@@ -51,3 +52,23 @@ img{
     transition: all 0.4s ease-out;
 }
 
+.msg-container{
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100px;
+}
+
+#msg{
+    height: 6rem;
+    width: 8.1rem;
+    border-radius: 10px;
+    background-color: var(--snd-color);
+    color: var(--bg-color);
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    padding: 1rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+}
